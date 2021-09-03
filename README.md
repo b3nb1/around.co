@@ -13,3 +13,12 @@
 ###### add credentials:
 * after clicking on google sign in a browser tab will be opened
 * choose your account if you have one and provide the path to your executable
+
+###### troubleshotting:
+* microphone is not working, try:
+```
+boot.extraModprobeConfig = ''
+  options snd slots=snd-hda-intel
+'';
+```
+configure sound e.g. with pavucontrol
