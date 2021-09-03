@@ -14,13 +14,10 @@ appimageTools.wrapType2 {
         sha256 = "1wq0jz8b1g9ahcjxqj33ng37jycqikc502dj91yq6cs30gcps34b";
       };
 
-  profile = ''
-    export XDG_CURRENT_DESKTOP=sway
-    export LC_ALL=C.UTF-8
-    export XDG_DATA_DIRS=${gsettings-desktop-schemas}/share/gsettings-schemas/${gsettings-desktop-schemas.name}:${gtk3}/share/gsettings-schemas/${gtk3.name}:$XDG_DATA_DIRS 
-    '';
+    profile = ''
+      export XDG_DATA_DIRS=${gsettings-desktop-schemas}/share/gsettings-schemas/${gsettings-desktop-schemas.name}:${gtk3}/share/gsettings-schemas/${gtk3.name}:$XDG_DATA_DIRS 
+      '';
     
-
     extraPkgs = pkgs: (with pkgs; 
     [
      cmake
