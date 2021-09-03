@@ -21,4 +21,5 @@ boot.extraModprobeConfig = ''
   options snd slots=snd-hda-intel
 '';
 ```
+in your nixos configuration.
 configure sound e.g. with pavucontrol
