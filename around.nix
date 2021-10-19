@@ -11,7 +11,7 @@ appimageTools.wrapType2 {
     name = "around"; 
     src = fetchurl { 
         url =  https://downloads.around.co/Around.AppImage;
-        sha256 = "1wq0jz8b1g9ahcjxqj33ng37jycqikc502dj91yq6cs30gcps34b";
+        sha256 = "0apcsjgvb20bq790rj1n7dvi5nd91x1gkjbg3qddca6my3f9l9lm";
       };
 
     profile = ''
